@@ -20,3 +20,10 @@ void displayRun(int values[], int size) {
         else cout << values[i] << " ";
     }
 }
+
+bool hasRun(int values[], int size) {
+    for (int i = 1; i < size; i++) {
+        if (values[i] == values[i - 1]) return true;
+    }
+    return false;
+}
